@@ -9,12 +9,20 @@ The following is a bill of materials for this build.
 
 Note that the selected vendors provide a suggestion of the component and the maker may choose to substitute with equivalent components.
 ### 3D
-| Component | Material | Special Instructions | Selected Vendors |
-| -- | -- | -- | -- |
-|Top Housing.stl|Clear-ish|Print using the transparent parts printing techniques discussed [in this article](https://www.cnckitchen.com/blog/transparent-fdm-3d-prints-are-clearly-stronger)|N/A|
-|Bottom Housing.stl|Your choice of color|N/A|N/A|
-|M3 x 12mm Socket Head Screw |N/A|N/A|[McMaster Carr 91290A117](https://www.mcmaster.com/91290A117/) <br /> [Bolt Depot 13637](https://www.boltdepot.com/Product-Details.aspx?product=13637)|
-|M3 Nut|N/A|N/A|TODO|
+#### Prints
+All 3d printable components are designed to be printable without supports.  The "flat bottom" may need to be aligned to print on your build plate in your favorite 3d printing slicer.
+| Component | Material | Special Instructions |
+| -- | -- | -- |
+|Top Housing.stl|Clear-ish|Print using the transparent parts printing techniques discussed [in this article](https://www.cnckitchen.com/blog/transparent-fdm-3d-prints-are-clearly-stronger)|
+|Bottom Housing.stl|Your choice of color|N/A|
+#### Vitamins
+| Component | Comments | Selected Vendors |
+| -- | -- |
+|M3 x 12mm Socket Head Screw |[McMaster Carr 91290A117](https://www.mcmaster.com/91290A117/) <br /> [Bolt Depot 13637](https://www.boltdepot.com/Product-Details.aspx?product=13637)|
+|M3 Nut| |TODO|
+|Cable Tie 2.5mm| | |
+|Foot Pedal| | |
+|Ferrite Bead| May be optional? | |
 
 ### PCB
 | Component | PCB Refs | Quantity | Description | Selected Vendors |
@@ -22,7 +30,10 @@ Note that the selected vendors provide a suggestion of the component and the mak
 |TODO|
 
 ## Assembly
-TODO
+1. Assemble the PCB and the foot pedal
+2. Assemble the 3d printed enclosure
+3. Plug in, program
+4. Enjoy
 
 ## Tools
 * KiCAD 6.0
