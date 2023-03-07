@@ -11,7 +11,7 @@ Note that the selected vendors provide a suggestion of the component and the mak
 ### 3D
 | Component | Material | Special Instructions | Selected Vendors |
 | -- | -- | -- | -- |
-|Top Housing.stl|Clear-ish|Print using the transparent parts printing techniques discussed https://www.cnckitchen.com/blog/transparent-fdm-3d-prints-are-clearly-stronger|N/A|
+|Top Housing.stl|Clear-ish|Print using the transparent parts printing techniques discussed [in this article](https://www.cnckitchen.com/blog/transparent-fdm-3d-prints-are-clearly-stronger)|N/A|
 |Bottom Housing.stl|Your choice of color|N/A|N/A|
 |M3 x 12mm Socket Head Screw |N/A|N/A|[McMaster Carr 91290A117](https://www.mcmaster.com/91290A117/) <br /> [Bolt Depot 13637](https://www.boltdepot.com/Product-Details.aspx?product=13637)|
 |M3 Nut|N/A|N/A|TODO|
