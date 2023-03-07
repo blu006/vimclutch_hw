@@ -2,7 +2,7 @@
 vimclutch hardware
 
 ## Description
-This is a VIM clutch implementation. This project uses the Arduino ProMicro, three tactile switches, and two LEDs.  The top two tactile switches are for switching modes.  The LEDs to show which layer the clutch is in.  The foot pedal is soldered onto the board.
+This is a vim clutch implementation. This project uses the Arduino ProMicro, three tactile switches, and two LEDs.  The top two tactile switches are for switching modes.  The LEDs to show which layer the clutch is in.  The foot pedal is soldered onto the board.
 
 ## BOM
 The following is a bill of materials for this build.
@@ -26,12 +26,13 @@ All 3d printable components are designed to be printable without supports.  The 
 |Cable Tie 2.5mm|For holding the foot pedal cable onto the PCB| [Digikey 2162-AL-04-18-9-C-ND](https://www.digikey.com/en/products/detail/advanced-cable-ties-inc/AL-04-18-9-C/10380608)|
 |Foot Pedal|Any SPDT or SPST foot pedal should work. |[Adafruit 423](https://www.adafruit.com/product/423) <br /> [Digi-Key 1528-1137-ND](https://www.digikey.com/en/products/detail/adafruit-industries-llc/423/5353597) |
 |Ferrite Bead| May be optional. See [interference](README.md#interference)|[Digi-Key 1934-1375-ND](https://www.digikey.com/en/products/detail/fair-rite-products-corp/0431167281/8593997) <br /> [Digi-Key 240-2077-ND](https://www.digikey.com/en/products/detail/laird-signal-integrity-products/28A2029-0A2/242805) <br /> [Digi-Key 240-2076-ND](https://www.digikey.com/en/products/detail/laird-signal-integrity-products/28A2029-0A0/242804)|
+|Micro USB Cable|Should have this already|Select a preferred vendor.  Local convenience stores or general stores will likely carry this part.|
 
 ### PCB
 Since the PCB was originally designed to be made on a makerspace CNC with readily-available parts, the components necessary are generic and substitutable.  These components can also be seen on the PCB BOM included in the PCB directory.
 | Component | Value | Quantity | Description | Selected Vendors |
 | -- | -- | -- | -- | -- |
-|C1|UNP|1|Unpopulated Capacitor for electrical black magic.  Place a relatively small capacitor here to practice your black magic rituals.|N/A find a local makerspace for a capacitor kit.|
+|C1|UNP|1|Unpopulated Capacitor for electrical black magic.  Place a relatively small capacitor here to practice your black magic rituals.|N/A find a local makerspace for an 0805 capacitor kit.|
 |D\*|RED|2|Wide Angle LED.  Note that this LED is height constrained.  It's possible to sand down a normal 5mm LED to fit in this position.|[Digi-Key 754-2141-ND](https://www.digikey.com/en/products/detail/kingbright/WP9294SECK-J3/7318908)|
 |R\*|2.7k|2|LED Current Limiting Resistor|[Digi-Key CR0805-FX-2701ELFCT-ND](https://www.digikey.com/en/products/detail/bourns-inc/CR0805-FX-2701ELF/3784809)|
 |SW1|H4.3mm|1|Reset switch.  4.3mm actuator length to keep it recessed into the housing.  A longer switch is also acceptable if it's what you have.  Tested successfully with 5mm.|[Digi-Key 2223-TS02-66-43-BK-260-SCR-D-ND](https://www.digikey.com/en/products/detail/cui-devices/TS02-66-43-BK-260-SCR-D/15634273)|
@@ -50,9 +51,9 @@ Since QMK is not designed to carry signals further than a few centimeters on a k
 
 It is recommended to keep the cord as short as feasible.  If the desired cord length is unknown, leaving it as long as possible may result in undefined behavior.
 
-It is recommended to use a clamp-on ferrite bead.  See the [vitamins](README.md#vitamins) for a recommended vendor list of ferrite beads. Note that it is recommended to wrap the wire around the bead multiple times if possible for the greatest inductive coupling to the bead material.
+It is recommended to use a clamp-on ferrite bead.  See the [vitamins](README.md#vitamins) for a recommended vendor list of ferrite beads. Note also that it is recommended to wrap the wire around the bead multiple times if possible for the greatest inductive coupling to the bead material.
 
-A capacitor on the board may be populated.  It helped in certain situations but may not be an alternative to using a ferrite bead.
+A capacitor on the board may be populated.  It helped the author in certain environments but may not be an alternative to using a ferrite bead.
 
 ## Tools
 * KiCAD 6.0
