@@ -5,15 +5,21 @@ vimclutch hardware
 This is a VIM clutch which uses the Arduino ProMicro and a few tactile switches.  The top two tactile switches are for switching modes.  There are LEDs to show which state the board is in.  There is a solder-on connection for the foot pedal.
 
 ## BOM
+The following is a bill of materials for this build.
+
+Note that the selected vendors provide a suggestion of the component and the maker may choose to substitute with equivalent components.
 ### 3D
-|| Component || Material || Special Instructions || Selected Vendors ||
+| Component | Material | Special Instructions | Selected Vendors |
+| -- | -- | -- | -- |
 |Top Housing.stl|Clear-ish|Print using the transparent parts printing techniques discussed https://www.cnckitchen.com/blog/transparent-fdm-3d-prints-are-clearly-stronger|N/A|
 |Bottom Housing.stl|Your choice of color|N/A|N/A|
 |M3 x 12mm Socket Head Screw |N/A|N/A||[McMaster Carr 91290A117](https://www.mcmaster.com/91290A117/) [Bolt Depot 13637](https://www.boltdepot.com/Product-Details.aspx?product=13637)|
 |M3 Nut|N/A|N/A|TODO|
+
 ### PCB
-|| Component || PCB Refs || Quantity || Description ||
-TODO
+| Component | PCB Refs | Quantity | Description | Selected Vendors |
+| -- | -- | -- | -- | -- |
+|TODO|
 
 ## Assembly
 TODO
