@@ -30,6 +30,8 @@ All 3d printable components are designed to be printable without supports.  The 
 
 ### PCB
 Since the PCB was originally designed to be made on a makerspace CNC with readily-available parts, the components necessary are generic and substitutable.  These components can also be seen on the PCB BOM included in the PCB directory.
+
+The PCB is fabbable using any online PCB fab.  The designed thickness is **1.6mm** and your mechanical components will fit best at this board thickness.
 | Component | Value | Quantity | Description | Selected Vendors |
 | -- | -- | -- | -- | -- |
 |C1|UNP|1|Unpopulated Capacitor for electrical black magic.  Place a relatively small capacitor here to practice your black magic rituals.|N/A find a local makerspace for an 0805 capacitor kit.|
