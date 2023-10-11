@@ -4,6 +4,9 @@ vimclutch hardware
 ## Description
 This is a vim clutch implementation. This project uses the Arduino ProMicro, three tactile switches, and two LEDs.  The top two tactile switches are for switching modes.  The LEDs to show which layer the clutch is in.  The foot pedal is soldered onto the board.
 
+## References
+[Link to QMK keyboard](https://github.com/qmk/qmk_firmware/tree/master/keyboards/blu/vimclutch)
+
 ## BOM
 The following is a bill of materials for this build.
 
@@ -34,7 +37,6 @@ Since the PCB was originally designed to be made on a makerspace CNC with readil
 The PCB is fabbable using any online PCB fab.  The designed thickness is **1.6mm** and your mechanical components will fit best at this board thickness.
 | Component | Value | Quantity | Description | Selected Vendors |
 | -- | -- | -- | -- | -- |
-|C1|UNP|1|Unpopulated Capacitor for electrical black magic.  Place a relatively small capacitor here to practice your black magic rituals.|N/A find a local makerspace for an 0805 capacitor kit.|
 |D\*|RED|2|Wide Angle LED.  Note that this LED is height constrained.  It's possible to sand down a normal 5mm LED to fit in this position.|[Digi-Key 754-2141-ND](https://www.digikey.com/en/products/detail/kingbright/WP9294SECK-J3/7318908)|
 |R\*|2.7k|2|LED Current Limiting Resistor|[Digi-Key CR0805-FX-2701ELFCT-ND](https://www.digikey.com/en/products/detail/bourns-inc/CR0805-FX-2701ELF/3784809)|
 |SW1|H4.3mm|1|Reset switch.  4.3mm actuator length to keep it recessed into the housing.  A longer switch is also acceptable if it's what you have.  Tested successfully with 5mm.|[Digi-Key 2223-TS02-66-43-BK-260-SCR-D-ND](https://www.digikey.com/en/products/detail/cui-devices/TS02-66-43-BK-260-SCR-D/15634273)|
@@ -44,18 +46,13 @@ The PCB is fabbable using any online PCB fab.  The designed thickness is **1.6mm
 ## Assembly
 1. Assemble the PCB and the foot pedal
 2. Assemble the 3d printed enclosure
-2. Wrap ferrite bead
 3. Plug in, program
 4. Enjoy
 
 ### Interference
-Since QMK is not designed to carry signals further than a few centimeters on a keyboard, the foot pedal cord may suffer from some interference or reflections from its construction.  This section details different ways to perform "black magic" and reduce these undesired electrical effects.
+Board revision A and its relatives had problems with interference.
 
-It is recommended to keep the cord as short as feasible.  If the desired cord length is unknown, leaving it as long as possible may result in undefined behavior.
-
-It is recommended to use a clamp-on ferrite bead.  See the [vitamins](README.md#vitamins) for a recommended vendor list of ferrite beads. Note also that it is recommended to wrap the wire around the bead multiple times if possible for the greatest inductive coupling to the bead material.
-
-A capacitor on the board may be populated.  It helped the author in certain environments but may not be an alternative to using a ferrite bead.
+Board revision B does not because it uses direct pull-down keys.
 
 ## Tools
 * KiCAD 6.0
@@ -67,8 +64,6 @@ A capacitor on the board may be populated.  It helped the author in certain envi
 ## Next Steps
 Consider the possibility of using a microcontroller with a USB-C port instead.
 
-Update to KiCAD 7.0
-
 ## Project Expectations
 This project is provided as a form of weblogging (see: blogging).  The designs provided are not guaranteed for mercantability or quality beyond the occasional one-off production from enthusiasts.
 
@@ -79,6 +74,9 @@ The tolerances from the SLA files and f360 should be sized for reasonably accura
 Feel free to start a conversation in the Issues on GitHub or on any other social media sites.
 
 The author may be willing to adjust some tolerances if the files are not editable enough for potential users.
+
+## History
+Rev B was released which changed all keys to be directly driven by the keyboard controller.
 
 ## Contributing
 Please leave feedback in the Issues tab on the ease of assembly and similar items.  Minor updates on "I had to file this part in this way" could potentially improve the assembly for other people.

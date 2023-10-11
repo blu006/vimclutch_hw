@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "(6.0.7)"
+      "Version": "7.0.6"
     },
-    "CreationDate": "2023-03-07T14:44:30-08:00"
+    "CreationDate": "2023-10-10T18:16:10-07:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "Foot Pedal PCB",
       "GUID": "466f6f74-2050-4656-9461-6c205043422e",
-      "Revision": "A1"
+      "Revision": "B"
     },
     "Size": {
       "X": 86.2,
